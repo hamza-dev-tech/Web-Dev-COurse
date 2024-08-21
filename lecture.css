@@ -1,0 +1,55 @@
+h1{
+    
+  color: aliceblue;
+}
+p{
+    color: white;
+    font-size: 18px;
+}
+
+.main{
+    height: 95vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* gap: 0.5rem; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+}
+.child1{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    /* order: 4; */
+    flex-shrink: 0;
+}
+.child2{
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    /* order: 3; */
+
+    /* flex-shrink:20 ; */
+}
+.child3{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    /* order: 1; */
+    /* flex-grow: 2; */
+}
+.child4{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    /* order: 2; */
+    /* flex-grow: 2; */
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        flex-direction: column;
+    }
+}
